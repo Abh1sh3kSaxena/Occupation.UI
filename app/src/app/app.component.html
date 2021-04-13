@@ -1,0 +1,15 @@
+<div>
+  <div>Name :</div><input type="text" placeholder="Enter your name" [(ngModel)]= "name" requried/> 
+  <div>Age :</div><input type="text" placeholder="Enter your age" [(ngModel)]= "age" required> 
+  <div>Date Of Birth :</div><input type="text" placeholder="Enter your DOB" [(ngModel)]= "dob" required> 
+  <div>Occupation</div>
+  <select id="occupation" [(ngModel)] = "selectedOccupation" (change)="calculateInsured()" >
+    <option *ngFor= "let occupation of occupations" [value] = "occupation.raiting">
+      {{occupation.occupation}}
+    </option>
+  </select>
+  <div>Sum Insured :</div><input type="text" placeholder="Enter your name" [(ngModel)]= "sumInsured" required> 
+  <div *ngIf="premium > 0"> Premium : {{premium}}</div>
+  <div><button type="button" (click)="calculateInsured()">calculate</button></div>
+  <div *ngIf="error != ''">{{error}}</div>
+</div>

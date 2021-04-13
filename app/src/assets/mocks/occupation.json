@@ -1,0 +1,26 @@
+[
+    {
+        "occupation": "Cleaner",
+        "raiting": "Light Manual"
+    },
+    {
+        "occupation": "Doctor",
+        "raiting": "Professional"
+    },
+    {
+        "occupation": "Author",
+        "raiting": "While Collor"
+    },
+    {
+        "occupation": "Farmer",
+        "raiting": "Heavy Manual"
+    },
+    {
+        "occupation": "Mechanic",
+        "raiting": "Heavy Manual"
+    },
+    {
+        "occupation": "Flourist",
+        "raiting": "Light Manual"
+    }
+]
